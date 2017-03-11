@@ -1,0 +1,25 @@
+body{
+  padding: 10px;
+}
+
+#canvas {
+  height: 530px;
+  overflow: scroll;
+}
+button input {
+  float:left;
+  width:20px;
+}
+.btn {
+  width:110px;
+  margin:3px;
+}
+.form-control{
+  margin:3px;
+}
+#color{
+  width:110px;
+}
+#range{
+  width:110px;
+}

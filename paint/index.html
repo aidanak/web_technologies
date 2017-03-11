@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+  <div class="container">
+  <h1>WEB PAINT</h1>
+  <div class="row">
+    <div class="col-sm-10" style="background-color:yellow;overflow:scroll;">
+      <div class="container">
+        <div class="row">
+          <input type="text" id="url" value="" min="0" max="15" class=" col-sm-8 form-control" style="width:820px;"></input>
+          <button type="button" class="col-sm-1 btn btn-danger" id="upload">upload</button>
+        </div>
+      </div>
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="col-sm-2" style="background-color:pink;width:150px;height:565px;" >
+          <button data-filter="noise" type="button" class="btn btn-primary filter-button">Noise</button>
+          <button data-filter="saturate" type="button" class="btn btn-primary filter-button">Saturate</button>
+          <button data-filter="sobel" type="button" class="btn btn-primary filter-button">Sobel</button>
+          <button data-filter="grayscale" type="button" class="btn btn-primary filter-button">Grayscale</button>
+          <button data-filter="blur" type="button" class="btn btn-primary filter-button">Blur</button>
+          <button data-filter="sepia" type="button" class="btn btn-primary filter-button">Sepia</button>
+          <button data-filter="brightness" type="button" class="btn btn-primary filter-button">Brightness</button>
+          <button data-filter="sharpen" type="button" class="btn btn-primary filter-button">Sharpen</button>
+          <button data-filter="emboss" type="button" class="btn btn-primary filter-button">Emboss</button>
+          <button type="button" class="btn btn-primary" id="pencil">Pencil</button>
+          <button type="button" class="btn btn-primary" id="filling">Fill</button>
+          <button type="button" class="btn btn-primary" id="eraser">Eraser</button>
+          <button type="button" class="btn btn-primary" id="select">Select</button>
+          <input id="color" type="color" value="" class="form-control"/>
+          <input type="range" id="range" value="" min="0" max="15" class="form-control"></input>
+    </div>
+  </div>
+</div>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
